@@ -1,0 +1,124 @@
+.site-header {
+    height: 100px;
+}
+
+.site-header,
+.site-header .container {
+    position: relative;
+}
+
+.container {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.site-header .header-logo {
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+}
+
+.site-header .logo {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    background-image: url(../images/mi-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ff6700;
+}
+
+.site-header .header-nav {
+    float: left;
+    width: 850px;
+}
+
+.site-header .nav-list {
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 1100px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.site-header .nav-item li {
+    float: left;
+    color: #333;
+    padding: 26px 10px 38px;
+}
+
+.site-header .header-nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+.site-header .header-nav a:hover {
+    color: #ff6700;
+}
+
+.site-header .header-search {
+    float: right;
+    width: 296px;
+    margin-top: 25px;
+}
+
+.site-header .search-form {
+    position: relative;
+    width: 296px;
+    height: 50px;
+    z-index: 20;
+}
+
+.site-header .no-style-msq {
+    color: #333;
+}
+
+.site-header .search-btn,
+.site-header .search-text {
+    position: absolute;
+    top: 0;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.site-header .no-style-msq {
+    color: #333;
+}
+
+.site-header .search-text {
+    right: 51px;
+    z-index: 1;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 48px;
+    border-color: #b0b0b0;
+    ;
+}
+
+.site-header .search-btn {
+    right: 0;
+    z-index: 2;
+    width: 52px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 24px;
+    background: #fff;
+    color: #616161;
+}
+
+.site-header .search-btn:hover {
+    border-color: #ff6700;
+    background: #ff6700;
+    color: #fff;
+}
