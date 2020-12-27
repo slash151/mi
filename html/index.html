@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>小米商城首页</title>
+    <link rel="shortcut icon" href="../images/mi-logo.png" type="image/x-icon" style="color: #FF6700;">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/site-topbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/site-header.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/home-hero-container.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin: 0;">
+    <!-- 页面顶部header到搜索框截止 -->
+    <div class="header">
+        <div class="topbar-banner-Wrapper">
+            <!-- 页面顶部广告 -->
+            <a href=""
+                style="width: 100%; height: 100%; position: absolute; background-position: center;background-image:url(../images/banner.jpg); background-size: auto 120px; background-repeat: no-repeat;"></a>
+        </div>
+        <!-- header的主菜单，包括登录，用户信息 -->
+        <div class="site-topbar">
+            <div class="container1" >
+                <div class="topbar-nav ">
+                    <!-- 主菜单导航栏 -->
+                    <ul>
+                        <li><a href="">小米商城</a></li>
+                        <li><a href="">MIUI</a></li>
+                        <li><a href="">IoT</a></li>
+                        <li><a href="">云服务</a></li>
+                        <li><a href="">天星数科</a></li>
+                        <li><a href="">有品</a></li>
+                        <li><a href="">小爱开放平台</a></li>
+                        <li><a href="">企业团购</a></li>
+                        <li><a href="">资质证照</a></li>
+                        <li><a href="">协议规则</a></li>
+                        <li><a href="">下载app</a></li>
+                        <li><a href="">智能生活</a></li>
+                        <li><a href="">Select Location</a></li>
+                    </ul>
+                </div>
+                <div class="topbar-cart">
+                    <!-- 主菜单购物车 -->
+                    <a class="cart-mini" href=""><span style="margin-top: 15px;" class="iconfont">&#xe621;</span>
+                        购物车（0）
+                    </a>
+                    <div class="cart-menu">
+                        <div class="msg">购物车中还没有商品，赶紧选购吧！</div>
+                    </div>
+                </div>
+                <div class="topbar-info">
+                    <!-- 主菜单用户信息 -->
+                    <ul id="js-add-li">
+                       <!-- <li><a href="account.html">登录</a></li>
+                        <li><a href="">注册</a></li>
+                        <li><a href="">消息通知</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- header部分的site-header，包括logo，具体产品和搜索框 -->
+        <div class="site-header">
+            <div class="container2">
+                <div class="header-logo">
+                    <!-- 小米logo -->
+                    <a class="logo ir" href=""></a>
+                </div>
+                <!-- header-nav，具体商品的导航栏 -->
+                <div class="header-nav">
+                    <ul class="nav-list nav-item">
+                        <li style="padding-right: 15px;width: 127px;text-align: right; float: left;">
+                            <a href="" style="visibility: hidden;">全部商品分类</a>
+                            <div class="site-category">
+                                <ul class="site-category-list">
+                                    <li class="category-item">
+                                        <a href="" class="title">手机 电话卡
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children children-col-1">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5ca871528d3420622f21f25be7aba58c.png?thumb=1&w=50&h=50&f=webp&q=90" alt="">
+                                                        <span>小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5ca871528d3420622f21f25be7aba58c.png?thumb=1&w=50&h=50&f=webp&q=90" alt="">
+                                                        <span>小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5ca871528d3420622f21f25be7aba58c.png?thumb=1&w=50&h=50&f=webp&q=90" alt="">
+                                                        <span>小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5ca871528d3420622f21f25be7aba58c.png?thumb=1&w=50&h=50&f=webp&q=90" alt="">
+                                                        <span>小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5ca871528d3420622f21f25be7aba58c.png?thumb=1&w=50&h=50&f=webp&q=90" alt="">
+                                                        <span>小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5ca871528d3420622f21f25be7aba58c.png?thumb=1&w=50&h=50&f=webp&q=90" alt="">
+                                                        <span>小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4a7a4f24061860901f724b6ba6d75fd9.png?thumb=1&w=50&h=50&f=webp&q=90" alt="">
+                                                        <span>小米10</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="" alt="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">电视 盒子
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">笔记本 显示器
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                            3
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">家电 插线板
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                            4
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">出行 穿戴
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                            5
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">智能 路由器
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                            6
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">电源 配件
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                            7
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">健康 儿童
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                            8
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">耳机 音箱
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                            9
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">生活 箱包
+                                            <span class="iconfont dayu">&#xe625;</span>
+                                        </a>
+                                        <div class="children">
+                                            10
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="shangpin"><a href="">小米手机</a></li>
+                        <li class="shangpin"><a href="">Redmi红米</a></li>
+                        <li class="shangpin"><a href="">电视</a></li>
+                        <li class="shangpin"><a href="">笔记本</a></li>
+                        <li class="shangpin"><a href="">家电</a></li>
+                        <li class="shangpin"><a href="">路由器</a></li>
+                        <li class="shangpin"><a href="">只能硬件</a></li>
+                        <li class="shangpin"><a href="">服务</a></li>
+                        <li class="shangpin"><a href="">社区</a></li>
+                    </ul>
+                </div>
+                <!-- 搜索框 -->
+                <div class="header-search">
+                    <form action="" class="search-form">
+                        <!-- 搜索框的输入栏 -->
+                        <a href="" class="no-style-msq">
+                            <input type="text" class="search-text">
+                        </a>
+                        <!-- 搜索框的搜索符号 -->
+                        <a href="" class="no-style-msq">
+                            <input type="submit" value="&#xe651" class="search-btn iconfont">
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-hero-container container3">
+        <div class="home-hero">
+            <div class="home-hero-swiper">
+                <div id="carouselId" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselId" data-slide-to="1"></li>
+                        <li data-target="#carouselId" data-slide-to="2"></li>
+                        <li data-target="#carouselId" data-slide-to="3"></li>
+                        <li data-target="#carouselId" data-slide-to="4"></li>
+                    </ol>
+                    <!-- 图片 -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/95a5d21f37dcf5e84ae1f557b2beebe6.jpg?w=2452&h=920"
+                                alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ebff5f5c1f52f2dbdd611897adbefd4.jpg?thumb=1&w=1533&h=575&f=webp&q=90"
+                                alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0ef4160c861b998239bce9adb82341e7.jpg?thumb=1&w=1533&h=575&f=webp&q=90"
+                                alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fd55500cb045ec14511f290912d73fc4.jpg?thumb=1&w=1533&h=575&f=webp&q=90"
+                                alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0e4acf11840c1d9600c34c46ffa73ec8.jpg?thumb=1&w=1533&h=575&f=webp&q=90"
+                                alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <!--轮播控制器-->
+                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev"
+                        style="left: 180px;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next"
+                        style="right: -50px;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/index.js"></script>
+</body>
+
+</html>

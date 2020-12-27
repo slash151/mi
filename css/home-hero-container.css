@@ -1,0 +1,24 @@
+.home-hero-container {
+    position: relative;
+}
+
+.container3 {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.home-hero {
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.home-hero-swiper {
+    position: relative;
+    height: 460px;
+    overflow: hidden;
+}
+
+.home-hero-swiper img{
+    height: 460px;
+}

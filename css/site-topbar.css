@@ -7,7 +7,7 @@
     background: #333;
 }
 
-.container {
+.container1 {
     width: 1226px;
     margin-right: auto;
     margin-left: auto;
@@ -19,14 +19,14 @@
     line-height: 40px;
 }
 
-.container ul {
+.container1 ul {
     height: 40px;
     margin: 0px;
     padding: 0px;
 
 }
 
-.container li {
+.container1 li {
     list-style-type: none;
     float: left;
 }
@@ -41,6 +41,7 @@
 
 .site-topbar a:hover {
     color: #ffffff;
+    text-decoration: none;
 }
 
 .site-topbar .topbar-cart {
@@ -89,7 +90,7 @@
     box-shadow: 2px 2px 3px #ddd;
 }
 
-.site-topbar .topbar-cart:hover .cart-menu {
+.topbar-cart:hover .cart-menu {
     display: block;
 }
 

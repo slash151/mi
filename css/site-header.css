@@ -3,11 +3,11 @@
 }
 
 .site-header,
-.site-header .container {
+.site-header .container2 {
     position: relative;
 }
 
-.container {
+.container2 {
     width: 1226px;
     margin-right: auto;
     margin-left: auto;
@@ -48,18 +48,117 @@
     font-size: 16px;
 }
 
-.site-header .nav-item li {
+.site-category {
+    position: absolute;
+    top: 100px;
+    left: -62px;
+    z-index: 21;
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+}
+
+.site-category-list {
+    /* height: 420px; */
+    border: 0;
+    color: #fff;
+    background: rgba(105, 101, 101, .6);
+    margin: 0;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.category-item {
+    width: 234px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.category-item a:hover {
+    text-decoration: none;
+}
+
+.site-category-list .title {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    height: 42px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.dayu {
+    position: absolute;
+    right: 20px;
+}
+
+.children {
+    position: absolute;
+    left: 234px;
+    top: 0px;
+    height: 460px;
+    overflow: hidden;
+    display: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #ddd;
+}
+
+.children-col-1 {
+    width: 992px;
+}
+
+.children ul {
+    padding: 0;
+    float: left;
+    width: 248px;
+}
+
+.children li {
+    position: relative;
+    float: left;
+    width: 265px;
+    height: 76px;
+    display: block;
+    line-height: 40px;
+    color: #333;
+}
+
+.children a {
+    display: block;
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+}
+
+.children img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.children span {
+    float: left;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.site-header .nav-item .shangpin {
     float: left;
     color: #333;
     padding: 26px 10px 38px;
 }
 
-.site-header .header-nav a {
+.site-header .header-nav .shangpin a {
     color: #333;
     text-decoration: none;
 }
 
-.site-header .header-nav a:hover {
+.site-header .header-nav .shangpin a:hover {
     color: #ff6700;
 }
 
@@ -98,12 +197,12 @@
     right: 51px;
     z-index: 1;
     width: 223px;
-    height: 48px;
+    /* height: 48px; */
     padding: 0 10px;
     font-size: 14px;
     line-height: 48px;
     border-color: #b0b0b0;
-    ;
+    border: 1px solid #e0e0e0;
 }
 
 .site-header .search-btn {

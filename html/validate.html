@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+	</body>
+	<script>
+		var checkout = false;
+		//定义变量表示当前页面的地址
+		var vhref = window.location.href;
+		//从vhref 字符串中截取请求参数,从？开始;username=xxx&pwd=xxx
+		var params = vhref.substr(vhref.indexOf("?") + 1);
+		//通过&进行字符串的拆分，pars是数组
+		var pars = params.split("&");
+		//获取数组中的对象
+		var uname = pars[0].substr(pars[0].indexOf("=") + 1);
+		var upwd = pars[1].substr(pars[1].indexOf("=") + 1);
+		// alert(uname+","+upwd);
+		//读取json文件，校验
+		$.getJSON("../JSON/users.json", function(infos) {
+			// infos.users; //返回的是数组[{},{},{}]
+			for (var i = 0; i < infos.users.length; i++) {
+				// infos.users[i];//{"username":"","pwd":""}
+				// infos.users[i].username;
+				// infos.users[i].pwd;
+				if (uname == infos.users[i].username && upwd == infos.users[i].password) {
+					// alert("登录成功");
+					checkout = true;
+					localStorage.loginName = uname;
+					break;
+				}
+			}
+			if (checkout) {
+				window.location.href = "index.html";
+			} else {
+				// alert("登录失败");
+				// localStorage.errinfo = uname;
+				window.location.href = "account.html";
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../Javascript/index.js">
+	</script>
+</html>
